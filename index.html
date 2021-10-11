@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>#SangueLaranjas Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <h4 id="nav-title"><a href="https://annereginatto.github.io/Landing-Page-SangueLaranja/">#SangueLaranjas</a></h4>
+            <ul>
+                <li><a class="nav-link" href="#agendamento">Agendamento</a></li>
+                <li><a class="nav-link" href="#horarios-escritorios">Horários & Escritórios</a></li>
+                <li><a class="nav-link" href="#info">Informações</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1><i style="color: #FF5F1F;" class="fas fa-info-circle"></i> Informações importantes</h1>
+        <section id="info">
+            <h2 id="sangue-laranjas">Olá #SangueLaranjas!</h2>
+            <h3>Com o fim da pandemia, muita ansiedade se criou ao redor do fim do trabalho em Home Office... mas saiba que nós estamos preocupados com a sua <strong style="color: #FF5F1F">segurança!</strong></h3>
+            <div class="info">
+                <h4>Algumas <strong style="color: #FF5F1F;">informações</strong> para se ter em mente para um retorno seguro ao trabalho presencial são:</h4>
+                <ol>
+                    <li> A volta ao escritório é <strong id="optional">opcional</strong>, portanto, você irá retornar ao trabalho presencial apenas se:
+                        <ul>
+                            <li class="ul">Se sentir à vontade;</li>
+                            <li class="ul">Morar próximo aos nossos escritórios.</li>
+                        </ul>
+                    </li>
+                    <li> O retorno ao escritório só é possível através de um <strong style="color: #FF5F1F;">sistema de agendamentos</strong> (clique <a href="#agendamento">aqui</a> para realizar o seu agendamento!);</li>
+                    <li> Sua <strong style="color: #FF5F1F;">temperatura</strong> será medida ao chegar no escritório;</li>
+                    <li> Todos os consultores deverão utilizar <strong style="color: #FF5F1F;">máscaras</strong> dentro das acomodações dos escritórios;</li>
+                    <li> Nas mesas existem <strong style="color: #FF5F1F;">adesivos</strong> sinalizando o local em que você irá trabalhar, para que haja o distanciamento necessário;</li>
+                    <li> Pessoas que estiverem sentindo algum sintoma deverão <strong style="color: #FF5F1F;">ficar em casa</strong>;</li>
+                    <li> Os escritórios comportam até <strong style="color: #FF5F1F;">40%</strong> dos consultores, conforme a legislação.</li>
+                </ol>
+            </div>
+        </section>
+        <section id="horarios-escritorios">
+            <div id="horarios">
+                <h2>Horários</h2>
+                <h4>Os escritórios voltarão a ficar abertos de segunda à sexta-feira das 8 às 18h.</h4>
+            </div>
+            <div id="escritorios">
+            <h2>Escritórios</h2>
+            <h4>Possuímos escritórios em:</h4>
+                <ol>
+                    <li>
+                        São Paulo (principal);
+                    </li>
+                    <li>
+                        Santos (filial).
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section id="agendamento">
+            <h2>Agendamento</h2>
+            <div id="form">
+                <div id="local">
+                    <label for="dropdown">Em qual escritório você gostaria de agendar?</label><br>
+                    <select id="dropdown" name="dropdown" required>
+                        <option disabled value="" selected="selected">Selecione o escritório</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="santos">Santos</option>
+                    </select><br>
+                </div>
+                <div id="date">
+                    <label for="date-input">Selecione a data:</label><br>
+                    <input id="date-input" type="date" required><br>
+                </div>
+                <div id="work">
+                    <label for="estacao">Escolha a estação de trabalho:</label><br>
+                    <select id="estacao" name="estacao" required>
+                        <option disabled value="" selected="selected">Selecione a estação</option>
+                        <option value="01">#01</option>
+                        <option value="02">#02</option>
+                        <option value="03">#03</option>
+                        <option value="04">#04</option>
+                        <option value="05">#05</option>
+                        <option value="06">#06</option>
+                        <option value="07">#07</option>
+                        <option value="08">#08</option>
+                        <option value="09">#09</option>
+                        <option value="10">#10</option>
+                    </select>
+                </div>
+                <script src="script.js"></script>
+                <button onclick="set()" id="btn" value="">Agendar</button>
+                <p id="result"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+          <li><a href="">Contato</a></li>
+        </ul>
+        <span>Copyright 2021, #SangueLaranjas</span><br>
+    </footer>
+</body>
+</html>
